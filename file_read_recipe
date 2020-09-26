@@ -24,11 +24,6 @@ def readme (filename: str ):
             ) )
     return recipes
 
-"""def findReci( ingredience : list, recipes : list):
-    for item in ingredience:
-        for reci in recipes:
-            if item in recipes.ingredients:"""
-
 def main():
     print(readme("recitest.csv"))
 
