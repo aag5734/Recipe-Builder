@@ -1,9 +1,6 @@
 def list_create(list):
-    ingredients = []
-    for i in range(len(list)):
-        if list[i] == ',':
-            ingredients.append(list[0:i])
-    print(ingredients[0])
+    ingredients = list.split(', ')
+    print(ingredients)
 
 
 def main():
@@ -13,3 +10,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
