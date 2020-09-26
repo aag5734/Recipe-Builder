@@ -57,26 +57,21 @@ ul li.active a{
 	height: 100%;
 }
 
-#header {
-	text-align: center;
-}
-
-#content {
-
-}
-
 #image {
 	float: left;
-	padding: 40px;
+	padding: 200px 20px;
 }
 
 #ingredients {
+	padding: 20px 0px 10px 50px;
 	padding: 250px 0px 100px;
 }
 
 #recipe {
+	padding: 20px;
 	padding: -150px;
 }
 
 #calories {
-}
+
+} 
