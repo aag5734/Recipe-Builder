@@ -1,8 +1,8 @@
 def list_create(list):
-    ingredients = ["apple", "test", "test_again"]
+    ingredients = []
     for i in range(len(list)):
         if list[i] == ',':
-            ingredients[0] = list[0:i]
+            ingredients.append(list[0:i])
     print(ingredients[0])
 
 
