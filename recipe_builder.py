@@ -33,6 +33,8 @@ def readme (filename: str ):
     return recipes
 
 def search (ingredience : list, resippy : list):
+    """Returns recipe list
+    """
     show = []
     for entry in resippy:
         result = all(elem in ingredience for elem in entry.ingredients)
