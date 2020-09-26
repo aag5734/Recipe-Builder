@@ -1,0 +1,38 @@
+body {
+	font-size: 20px;
+	color: white;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../backgroundreciepepicture.jpg); 
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+#container {
+	background-size: cover;
+	height: 100%;
+}
+
+#header {
+	text-align: center;
+}
+
+#content {
+
+}
+
+#image {
+	float: left;
+	padding: 20px;
+}
+
+#ingredients {
+	padding: 20px 0px 10px 50px;
+}
+
+#recipe {
+	padding: 20px;
+}
+
+#calories {
+	
+}
