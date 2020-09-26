@@ -1,2 +1,37 @@
-"""hee hee hoo hoo
-"""
+from dataclasses import dataclass
+
+@dataclass()
+class Recipe:
+    name : str
+    ingredients : list
+    instruct : str
+
+def readme (filename: str ):
+    """
+    Read people from a file into a list of Person dataclass objects.
+    :param filename: The name of the file
+    :return: A list of merchants
+    """
+    recipes = list()
+    with open( filename ) as f:
+        for line in f:
+            fields = line.split(',')
+            list1 = fields[1:len(fields)-1]
+            recipes.append( Recipe(
+                name = str( fields[ 0 ] ),
+                ingredients = list1,
+                instruct = str( fields[ len(fields) - 1 ] )
+            ) )
+    return recipes
+
+"""def findReci( ingredience : list, recipes : list):
+    for item in ingredience:
+        for reci in recipes:
+            if item in recipes.ingredients:"""
+
+def main():
+    print(readme("recitest.csv"))
+
+
+if __name__ == "__main__":
+    main()
