@@ -16,13 +16,49 @@ body {
 }
 
 #box_1 {
-		float: left;
+	float: left;
 }
 
 #image_1 {
-		float: left;
+
 }
 
 #description_1 {
-		float: left;
+	color: white;
+}
+
+#box_2 {
+	float: right;
+}
+
+#image_2 {
+
+}
+
+#description_2 {
+
+}
+
+#box_3 {
+	float: left;
+}
+
+#image_3 {
+
+}
+
+#description_3 {
+
+}
+
+#box_4 {
+	float: right;
+}
+
+#image_4 {
+
+}
+
+#description_4 {
+
 }
