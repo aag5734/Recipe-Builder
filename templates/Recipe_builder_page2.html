@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recipe</title>
+		<link rel="stylesheet" type="text/css" href="css/page2_style.css" />
+	</head>
+
+	<body>
+		<div class="main">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li class="active"><a href="#">My Recipes</a></li>
+				<li><a href="#">Donate</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>Recipes:</h1>
+		</div>
+		<div id = "content">
+			{% for recipe in recipes %}
+			<div id = "box">
+				<div id = "image">
+					<img src = {{recipe.image}} alt = {{ recipe.name }} width = 250>
+				</div>
+				{{ recipe.name }}
+				<div id = "description">
+					<p><a href = "#">{{ recipe.instruct }}</a></p>
+				</div>
+			</div>
+			{% endfor %}
+
+			</div>
+		</div>
+	</body>
+</html>
